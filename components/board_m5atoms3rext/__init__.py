@@ -2,7 +2,7 @@ import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome.const import CONF_ID
 
-empty_component_ns = cg.esphome_ns.namespace('board_M5AtomS3RExt')
+empty_component_ns = cg.esphome_ns.namespace('board_m5atoms3rext')
 EmptyComponent = empty_component_ns.class_('BoardM5AtomS3Ext', cg.Component)
 
 CONFIG_SCHEMA = cv.Schema({
