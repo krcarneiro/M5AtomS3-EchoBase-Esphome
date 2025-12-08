@@ -1,5 +1,5 @@
 #include "esphome/core/log.h"
-#include "board_m5atoms3.h"
+#include "board_m5atoms3rext.h"
 
 namespace esphome {
 namespace board_M5AtomS3RExt {
