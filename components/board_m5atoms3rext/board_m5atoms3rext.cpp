@@ -18,7 +18,7 @@ void BoardM5AtomS3RExt::setup() {
     // M5.Speaker.end();
 }
 
-void BoardM5AtomS3::loop() {
+void BoardM5AtomS3RExt::loop() {
 
 }
 
