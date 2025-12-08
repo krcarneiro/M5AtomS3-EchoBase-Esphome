@@ -7,7 +7,7 @@
 
 
 namespace esphome {
-namespace board_M5AtomEchoS3RExt {
+namespace board_m5atoms3rext {
 
 class BoardM5AtomS3RExt : public Component {
  public:
