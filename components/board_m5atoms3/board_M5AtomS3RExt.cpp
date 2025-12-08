@@ -2,11 +2,11 @@
 #include "board_m5atoms3.h"
 
 namespace esphome {
-namespace board_m5atoms3 {
+namespace board_M5AtomS3RExt {
 
-static const char *TAG = "board.m5atoms3";
+static const char *TAG = "board.m5atoms3rext";
 
-void BoardM5AtomS3::setup() {
+void BoardM5AtomS3RExt::setup() {
 
     ESP_LOGI(TAG, "setup");
     auto cfg = M5.config();
@@ -22,10 +22,11 @@ void BoardM5AtomS3::loop() {
 
 }
 
-void BoardM5AtomS3::dump_config(){
+void BoardM5AtomS3RExt::dump_config(){
     ESP_LOGCONFIG(TAG, "config");
 }
 
 
 }  // namespace empty_component
+
 }  // namespace esphome
