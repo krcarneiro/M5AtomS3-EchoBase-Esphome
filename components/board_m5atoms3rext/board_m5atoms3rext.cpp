@@ -2,7 +2,7 @@
 #include "board_m5atoms3rext.h"
 
 namespace esphome {
-namespace board_M5AtomS3RExt {
+namespace board_m5atoms3rext {
 
 static const char *TAG = "board.m5atoms3rext";
 
