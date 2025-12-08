@@ -7,9 +7,9 @@
 
 
 namespace esphome {
-namespace board_M5AtomEchoS3R {
+namespace board_M5AtomEchoS3RExt {
 
-class BoardM5AtomS3 : public Component {
+class BoardM5AtomS3RExt : public Component {
  public:
   void setup() override;
   void loop() override;
