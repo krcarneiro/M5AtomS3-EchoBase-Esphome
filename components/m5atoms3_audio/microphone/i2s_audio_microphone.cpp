@@ -82,6 +82,7 @@ void I2SAudioMicrophone::start_() {
   M5.Mic.begin();
   auto cfg = M5.Mic.config();
   cfg.task_priority = 15;
+  cfg.sample_rate = 16000;
   M5.Mic.config(cfg);
   ESP_LOGI(TAG, "start mic");
 
@@ -119,7 +120,8 @@ void I2SAudioMicrophone::stop_() {
 
 size_t I2SAudioMicrophone::read(int16_t *buf, size_t len) {
   
-  M5.Mic.record(buf, 256, this->parent_ -> get_sample_rate());
+  // KC M5.Mic.record(buf, 256, this->parent_ -> get_sample_rate());
+  M5.Mic.record(buf, 256, 16000);
   // M5.Mic.record(buf, 512, 16000);
   while (M5.Mic.isRecording());
   // delay(500);
