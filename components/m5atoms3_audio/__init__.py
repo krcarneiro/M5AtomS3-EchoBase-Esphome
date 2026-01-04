@@ -18,7 +18,7 @@ MULTI_CONF = True
 
 CONF_I2S_AUDIO = "m5atoms3_audio"
 CONF_I2S_AUDIO_ID = "m5atoms3_audio_id"
-CONF_I2S_DIN_PIN = 7
+# CONF_I2S_DIN_PIN = 7
 
 i2s_audio_ns = cg.esphome_ns.namespace("m5atoms3_audio")
 I2SAudioComponent = i2s_audio_ns.class_("M5AtomS3AudioComponent", cg.Component)
