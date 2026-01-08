@@ -4,6 +4,7 @@ import esphome.codegen as cg
 from esphome import pins
 from esphome.const import CONF_CHANNEL, CONF_ID, CONF_NUMBER, CONF_CHANNELS
 from esphome.components import microphone, esp32
+from esphome.components.audio import CONF_MAX_CHANNELS
 from esphome.components.adc import ESP32_VARIANT_ADC1_PIN_TO_CHANNEL, validate_adc_pin
 
 from .. import (
@@ -41,6 +42,7 @@ CONFIG_SCHEMA = microphone.MICROPHONE_SCHEMA.extend(
         cv.GenerateID(): cv.declare_id(I2SAudioMicrophone),
         cv.GenerateID(CONF_I2S_AUDIO_ID): cv.use_id(I2SAudioComponent),
         cv.Optional(CONF_CHANNELS, default=1): cv.int_range(min=1, max=1),
+        cv.Optional(CONF_MAX_CHANNELS, default=1): cv.int_range(min=1, max=1),        
     }
 )
 
