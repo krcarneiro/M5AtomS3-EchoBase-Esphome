@@ -40,6 +40,7 @@ CONFIG_SCHEMA = microphone.MICROPHONE_SCHEMA.extend(
     {
         cv.GenerateID(): cv.declare_id(I2SAudioMicrophone),
         cv.GenerateID(CONF_I2S_AUDIO_ID): cv.use_id(I2SAudioComponent),
+        cv.Optional(CONF_CHANNELS, default=1): cv.int_range(min=1, max=1)
     }
 )
 
